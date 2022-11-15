@@ -12,9 +12,19 @@
     height:85vh;
     width:100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
     background-color:black;
     border-radius:0 100% 0 100% / 100% 8% 92% 0;
+}
+
+.page-container-icon-container{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.blue-logo-variation{
+    filter: invert(39%) sepia(79%) saturate(2609%) hue-rotate(182deg) brightness(102%) contrast(102%);
 }
