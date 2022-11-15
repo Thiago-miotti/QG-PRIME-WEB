@@ -1,0 +1,16 @@
+.dark-input {
+    height: 60px;
+    outline: none;
+    width: 100%;
+    font-family: 'Roboto', serif;
+    border-radius: 8px;
+    background: #22272E;
+    border: none;
+    font-size: 18px;
+    color: white;
+    text-indent: 15px;
+}
+
+.dark-input:focus {
+    border: 1px solid #0097FA;
+}

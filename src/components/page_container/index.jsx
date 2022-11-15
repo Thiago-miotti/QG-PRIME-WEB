@@ -12,7 +12,7 @@ const PageContainer = ({ goBackAction, hasLogo, children }) => {
             <div className="page-container-child">
                 {children}
 
-                {hasLogo && <img src={PrimeVideoLogo} alt='prime video logo' width="250px" height="200px" className="blue-logo-variation"/>}
+                {hasLogo && <img src={PrimeVideoLogo} alt='prime video logo' width="250px" height="130px" className="blue-logo-variation"/>}
             </div>
         </div>
     );
