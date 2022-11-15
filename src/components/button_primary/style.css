@@ -1,0 +1,28 @@
+
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button{
+    width: 250px;
+    height: 50px;
+    border: none;
+    color:white;
+    background-color:#0097FA;
+    font-weight:bold;
+    font-family:'Roboto';
+    letter-spacing:3px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+button:hover{
+    background-color:#38aaf5;
+}
+
+
+
