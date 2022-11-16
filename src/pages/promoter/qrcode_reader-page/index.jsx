@@ -49,6 +49,7 @@ function QrCodeReaderPage() {
                     <QrReader
                         onResult={(result, error) => handleQrCodeResult(result, error)}
                         style={{width: '100%'}}
+                        constraints={{ facingMode: { exact: "environment" }} }
                     />
                 </div>
 
