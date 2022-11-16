@@ -1,20 +1,18 @@
 import React from 'react'
-import './App.css';
 import {
     Routes,
     Route,
 } from "react-router-dom";
 
-import UserLoginPage from '../user/user_loginPage';
-import UserFormPage from '../user/user_formPage';
-import UserQRCodePage from '../user/user_qrcode';
-import PromoterQrCodeReaderPage from "../promoter/qrcode_reader";
-import PromoterStandSelection from '../promoter/Stand_Selection';
-import PromoterSuccessPage from '../promoter/SuccessPage';
-import PromoterConfirmationAccess from '../promoter/confirmationAccess';
+import UserLoginPage from './pages/user/login-page';
+import UserFormPage from './pages/user/register-page';
+import UserQRCodePage from './pages/user/qrcode-page';
+import PromoterQrCodeReaderPage from "./pages/promoter/qrcode_reader-page";
+import PromoterStandSelection from './pages/promoter/stand_selection-page';
+import PromoterSuccessPage from './pages/promoter/success-page';
+import PromoterConfirmationAccess from './pages/promoter/confirmation-access-page';
 
-
-function App() {
+function Router() {
   return (
         <Routes>
             <Route path="user/login" element={<UserLoginPage />} />
@@ -29,4 +27,4 @@ function App() {
   )
 }
 
-export default App;
+export default Router;
