@@ -5,6 +5,7 @@ import PageContainer from '../../../components/page_container';
 import { AiFillCheckCircle } from 'react-icons/ai';
 
 function ConfirmationAccess() {
+    // TODO -> Button to go back to stand selection
   return (
     <>
      <PageContainer hasLogo>
