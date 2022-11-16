@@ -16,7 +16,7 @@ function QrCodeReaderPage() {
 
     const handleQrCodeResult = (result, error) => {
         if (!!result) {
-            navigate(`promoter/confirmation/${result?.text}/${standId}`)
+            navigate(`/promoter/confirmation/${result?.text}/${standId}`)
         }
     }
 
@@ -49,7 +49,7 @@ function QrCodeReaderPage() {
                     <QrReader
                         onResult={(result, error) => handleQrCodeResult(result, error)}
                         style={{width: '100%'}}
-                        constraints={{ facingMode: { ideal: "environment" } }}
+                        constraints={{ facingMode: { exact: "environment" } }}
                     />
                 </div>
 
