@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/qg-prime-web/static/css/main.42627377.css",
-    "main.js": "/qg-prime-web/static/js/main.037ea00c.js",
+    "main.js": "/qg-prime-web/static/js/main.ca64f03d.js",
     "static/media/logoPrimeVideoPreto.svg": "/qg-prime-web/static/media/logoPrimeVideoPreto.f45d8a0d6022bb4cbd38a61de2a0dbc1.svg",
     "index.html": "/qg-prime-web/index.html",
     "main.42627377.css.map": "/qg-prime-web/static/css/main.42627377.css.map",
-    "main.037ea00c.js.map": "/qg-prime-web/static/js/main.037ea00c.js.map"
+    "main.ca64f03d.js.map": "/qg-prime-web/static/js/main.ca64f03d.js.map"
   },
   "entrypoints": [
     "static/css/main.42627377.css",
-    "static/js/main.037ea00c.js"
+    "static/js/main.ca64f03d.js"
   ]
 }
