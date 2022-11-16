@@ -8,7 +8,7 @@ import UserLoginPage from './pages/user/login-page';
 import UserFormPage from './pages/user/register-page';
 import UserQRCodePage from './pages/user/qrcode-page';
 import PromoterQrCodeReaderPage from "./pages/promoter/qrcode_reader-page";
-import PromoterStandSelection from './pages/promoter/stand_selection-page';
+import PromoterStandSelection from './pages/promoter/stand-selection-page';
 import PromoterSuccessPage from './pages/promoter/success-page';
 import PromoterConfirmationAccess from './pages/promoter/confirmation-access-page';
 

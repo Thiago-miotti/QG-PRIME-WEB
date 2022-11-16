@@ -14,7 +14,7 @@ function UserFormPage() {
     const [email, setEmail] = useState('');
     const [phone, setPhone] = useState('');
 
-    const [isRegisterRequestOnProgress, SetIsRegisterRequestOnProgress] = useState(false);
+    const [isRegisterRequestOnProgress, setIsRegisterRequestOnProgress] = useState(false);
 
     const [alert, setAlert] = useState({ showAlert: false, message: '', severity: 'error'})
 
@@ -27,7 +27,7 @@ function UserFormPage() {
             return;
         }
 
-        SetIsRegisterRequestOnProgress(true);
+        setIsRegisterRequestOnProgress(true);
         const response = await axios.post('https://api-qg-prime.azurewebsites.net/api/api-user-register', {
             name,
             lastname,
@@ -41,7 +41,7 @@ function UserFormPage() {
             setAlert({ showAlert: true, message: 'Parece que houve algum erro interno, por favor, contate nosso suporte.', severity: 'error' })
         }
 
-        SetIsRegisterRequestOnProgress(false);
+        setIsRegisterRequestOnProgress(false);
     }
 
     return (
