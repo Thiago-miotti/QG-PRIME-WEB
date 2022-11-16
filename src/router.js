@@ -15,7 +15,7 @@ import PromoterConfirmationAccess from './pages/promoter/confirmation-access-pag
 function Router() {
   return (
         <Routes>
-            <Route path="user/login" element={<UserLoginPage />} />
+            <Route path="/" element={<UserLoginPage />} />
             <Route path="user/register" element={<UserFormPage />} />
             <Route path="user/qrcode/:id/:name" element={<UserQRCodePage />} />
 
