@@ -33,7 +33,7 @@ function Promoter_Stand_Selection() {
 
     return (
         <>
-            <PageContainer hasLogo>
+            <PageContainer hasLogo goBackAction={() => navigate(-1)}>
                 <Snackbar
                     open={alert.showAlert}
                     autoHideDuration={4000}

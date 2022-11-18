@@ -6,6 +6,7 @@ import {QrReader} from 'react-qr-reader';
 import DarkInput from "../../../components/dark_input";
 import {useNavigate, useParams} from "react-router-dom";
 import {Alert, Snackbar} from "@mui/material";
+import { AiOutlineArrowRight } from 'react-icons/ai';
 
 function QrCodeReaderPage() {
     const [manualCode, setManualCode] = useState('');
@@ -52,10 +53,10 @@ function QrCodeReaderPage() {
                         constraints={{ facingMode: { exact: "environment" } }}
                     />
                 </div>
-
-                <DarkInput type="text" placeholder="Código" value={manualCode} onChange={(e) => setManualCode(e.target.value)}/>
-
-                <ButtonPrimary title='Confirmar' onClick={handleConfirmAction}/>
+                <div style={{display:'flex' , justifyContent:'center', alignItems:'center'}}>
+                    <DarkInput type="text" placeholder="Código" value={manualCode} onChange={(e) => setManualCode(e.target.value)} style={{borderRadius:'8px 0 0 8px'}}/>
+                    <ButtonPrimary title={<AiOutlineArrowRight/>} onClick={handleConfirmAction} style={{width:"70px", height:'60px', borderRadius:'0 8px 8px 0'}}/>
+                </div>
             </div>
 
         </PageContainer>
