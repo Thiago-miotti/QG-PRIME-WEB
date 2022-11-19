@@ -14,7 +14,6 @@ function Promoter_Stand_Selection() {
     const [alert, setAlert] = useState({ showAlert: false, message: '', severity: 'error'})
     const [isStandRequestOnProgress, setIsStandRequestOnProgress] = useState(false);
 
-
     useEffect(() => {
         (async () => {
 
@@ -33,7 +32,7 @@ function Promoter_Stand_Selection() {
 
     return (
         <>
-            <PageContainer hasLogo goBackAction={() => navigate(-1)}>
+            <PageContainer hasLogo goBackAction={() => navigate('/')}>
                 <Snackbar
                     open={alert.showAlert}
                     autoHideDuration={4000}

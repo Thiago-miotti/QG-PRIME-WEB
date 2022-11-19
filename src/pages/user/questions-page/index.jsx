@@ -129,7 +129,7 @@ const QuestionsPage = () => {
                 <div className="questions-container-body">
                     <CustomizedSteppers steps={[1, 2, 3, 4]} activeStep={currentStep}/>
                     <h3 style={{color: '#fff', fontWeight: 'bold'}}>{currentQuestion.description}</h3>
-                    <Box sx={{maxWidth: 450, width: '100%', maxHeight: '400px', overflowY: 'scroll', padding: '6px 0'}}>
+                    <Box className='questions-container-body-answers' >
                         {currentQuestion?.type === 'single' ? (
                             <RadioGroup
                                 aria-labelledby="storage-label"

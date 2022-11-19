@@ -18,22 +18,21 @@ function ConfirmationAccess() {
     const [isUserRequestOnProgress, setIsUserRequestOnProgress] = useState(false);
     const [isCheckinRequestOnProgress, setIsCheckinRequestOnProgress] = useState(false);
 
-
-    useEffect(() => {
-        (async () => {
-            setIsUserRequestOnProgress(true);
-
-            const response = await axios.get(`https://api-qg-prime.azurewebsites.net/api/user/${userId}`);
-
-            if (response && response.status === 200) {
-                setUser(response.data);
-            } else {
-                setAlert({ showAlert: true, message: 'Parece que houve algum erro interno, por favor, contate nosso suporte.', severity: 'error' })
-            }
-            setIsUserRequestOnProgress(false);
-
-        })()
-    }, [userId])
+    // useEffect(() => {
+    //     (async () => {
+    //         setIsUserRequestOnProgress(true);
+    //
+    //         const response = await axios.get(`https://api-qg-prime.azurewebsites.net/api/user/${userId}`);
+    //
+    //         if (response && response.status === 200) {
+    //             setUser(response.data);
+    //         } else {
+    //             setAlert({ showAlert: true, message: 'Parece que houve algum erro interno, por favor, contate nosso suporte.', severity: 'error' })
+    //         }
+    //         setIsUserRequestOnProgress(false);
+    //
+    //     })()
+    // }, [userId])
 
     const handleUserCheckIn = async () => {
 
@@ -79,7 +78,7 @@ function ConfirmationAccess() {
                         </Box>
                     ) : (
                         <Typography variant="h4"
-                                    sx={{color: 'white'}}>{`${user.name?.toUpperCase()} ${user.lastname?.toUpperCase()}`}</Typography>
+                                    sx={{color: 'white'}}>Cód: {userId}</Typography>
                     )}
 
                     <ButtonPrimary title={isCheckinRequestOnProgress ? <CircularProgress /> : "CONFIRMAR ACESSO"} onClick={handleUserCheckIn}/>
