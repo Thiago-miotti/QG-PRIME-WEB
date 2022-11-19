@@ -9,7 +9,7 @@ import PrimeVideoLogo from "../../../assets/logoPrimeVideoPreto.svg";
 
 
 function UserLoginPage() {
-    let {id, name} = useParams()
+    let {id} = useParams()
 
     return (
         <>
@@ -69,7 +69,7 @@ function UserLoginPage() {
                                 noWrap={true}
                                 sx={{mt: 2, letterSpacing: "2px", fontWeight: "bold", color: 'white'}}
                             >
-                                {`${name.split('-')[0].toUpperCase()} ${name.split('-')[1].toUpperCase()},`}
+                                Olá,
                             </Typography>
                             <Typography
                                 variant="h7"
@@ -102,7 +102,7 @@ function UserLoginPage() {
                         </div>
 
                         <div>
-                            <ButtonPrimary title="RECONHECIMENTO FACIAL"/>
+                            <ButtonPrimary title="RECONHECIMENTO FACIAL" onClick={()=>window.open('https://events.getsnappic.com/qr/mGYl6','_blank')} />
                             <img src={PrimeVideoLogo} alt='prime video logo' width="250px" height="130px"
                                  className="blue-logo-variation"/>
                         </div>

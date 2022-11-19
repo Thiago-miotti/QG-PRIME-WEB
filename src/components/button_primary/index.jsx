@@ -1,6 +1,6 @@
 import './style.css';
 
-function button_primary(props){
+function ButtonPrimary(props){
     return(
         <div className="button">
             <button style={props.style} disabled={props.disabled} onClick={props.onClick}>{props.title}</button>
@@ -8,4 +8,4 @@ function button_primary(props){
     )
 }
 
-export default button_primary;
+export default ButtonPrimary;
