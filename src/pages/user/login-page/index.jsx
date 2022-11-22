@@ -17,7 +17,7 @@ function UserLoginPage() {
 
   const handleUserCreate = async () => {
     setIsUserCreateRequestOnProgress(true);
-    const response = await axios.post('https://api-qg-prime.azurewebsites.net/api/api-user-register')
+    const response = await axios.post('https://api-qg-amazon.azurewebsites.net/api/api-user-register')
 
     if (response && response.status === 200) {
       navigate(`/user/${response.data.id}/questions`);
@@ -50,11 +50,11 @@ function UserLoginPage() {
           <img src={Logo} width='200px' height='200px' alt='prime video logo' className='blue-logo-variation'/>
           <ButtonPrimary title={isUserCreateRequestOnProgress ? <CircularProgress/> : 'Iniciar Cadastro'} disabled={isUserCreateRequestOnProgress} onClick={handleUserCreate}/>
         </div>
-        <div style={{position: 'absolute', right: '20px', bottom: '20px'}} onClick={() => navigate('/promoter/stands')}>
-          <Fab size="medium" color="primary" aria-label="add">
-            <BsFillPersonFill />
-          </Fab>
-        </div>
+        {/*<div style={{position: 'absolute', right: '20px', bottom: '20px'}} onClick={() => navigate('/promoter/stands')}>*/}
+        {/*  <Fab size="medium" color="primary" aria-label="add">*/}
+        {/*    <BsFillPersonFill />*/}
+        {/*  </Fab>*/}
+        {/*</div>*/}
 
       </div>
       </>

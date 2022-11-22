@@ -69,7 +69,7 @@ function UserLoginPage() {
                                 noWrap={true}
                                 sx={{mt: 2, letterSpacing: "2px", fontWeight: "bold", color: 'white'}}
                             >
-                                Olá,
+                                SUCESSO
                             </Typography>
                             <Typography
                                 variant="h7"

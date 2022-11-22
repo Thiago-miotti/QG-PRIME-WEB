@@ -22,7 +22,7 @@ function ConfirmationAccess() {
     //     (async () => {
     //         setIsUserRequestOnProgress(true);
     //
-    //         const response = await axios.get(`https://api-qg-prime.azurewebsites.net/api/user/${userId}`);
+    //         const response = await axios.get(`https://api-qg-amazon.azurewebsites.net/api/user/${userId}`);
     //
     //         if (response && response.status === 200) {
     //             setUser(response.data);
@@ -43,7 +43,7 @@ function ConfirmationAccess() {
 
         setIsCheckinRequestOnProgress(true);
 
-        const response = await axios.put('https://api-qg-prime.azurewebsites.net/api/api-user-check-in', {
+        const response = await axios.put('https://api-qg-amazon.azurewebsites.net/api/api-user-check-in', {
             userId,
             activationStandId: standId
         })

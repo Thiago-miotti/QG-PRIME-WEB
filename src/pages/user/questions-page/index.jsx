@@ -89,7 +89,7 @@ const QuestionsPage = () => {
         if(userAnswer.length === 0) return;
 
         setIsUserAnswerRequestOnProgress(true);
-        const response = await axios.post('https://api-qg-prime.azurewebsites.net/api/api-user-answer', {userId: id, answersIds: userAnswer})
+        const response = await axios.post('https://api-qg-amazon.azurewebsites.net/api/api-user-answer', {userId: id, answersIds: userAnswer})
 
         if (response && response.status === 200) {
             const nextQuestion = currentQuestion?.answers.find(answer => answer.id === userAnswer[0])?.nextQuestion;

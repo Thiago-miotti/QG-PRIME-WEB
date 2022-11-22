@@ -18,7 +18,7 @@ function Promoter_Stand_Selection() {
         (async () => {
 
             setIsStandRequestOnProgress(true);
-            const response = await axios.get('https://api-qg-prime.azurewebsites.net/api/api-fetch-all-stands')
+            const response = await axios.get('https://api-qg-amazon.azurewebsites.net/api/api-fetch-all-stands')
 
             if(response && response.status === 200){
                 setStands(response.data);

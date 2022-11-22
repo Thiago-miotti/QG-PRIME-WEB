@@ -45,7 +45,7 @@ function UserFormPage() {
         }
 
         setIsRegisterRequestOnProgress(true);
-        const response = await axios.post('https://api-qg-prime.azurewebsites.net/api/api-user-register', {
+        const response = await axios.post('https://api-qg-amazon.azurewebsites.net/api/api-user-register', {
             name,
             lastname,
             email,
