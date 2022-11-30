@@ -7,6 +7,7 @@ import { BsFillPersonFill } from 'react-icons/bs';
 import {Alert, CircularProgress, Fab, Snackbar} from "@mui/material";
 import axios from "axios";
 import React, {useState} from "react";
+import PrimeVideoLogo from "../../../assets/logoPrimeVideoPreto.svg";
 
 
 function UserLoginPage() {
@@ -46,15 +47,17 @@ function UserLoginPage() {
           </Alert>
         </Snackbar>
 
-        <div className='container2'  style={{backgroundColor:'black'}}>
+        <div className='container2'  style={{backgroundColor:'black', rowGap: '20px'}}>
           <img src={Logo} width='200px' height='200px' alt='prime video logo' className='blue-logo-variation'/>
           <ButtonPrimary title={isUserCreateRequestOnProgress ? <CircularProgress/> : 'Iniciar Cadastro'} disabled={isUserCreateRequestOnProgress} onClick={handleUserCreate}/>
+
+          <ButtonPrimary style={{padding: '5px'}} title="Reconhecimento facial" onClick={()=>window.open('https://events.getsnappic.com/qr/mGYl6','_blank')} />
         </div>
-        {/*<div style={{position: 'absolute', right: '20px', bottom: '20px'}} onClick={() => navigate('/promoter/stands')}>*/}
-        {/*  <Fab size="medium" color="primary" aria-label="add">*/}
-        {/*    <BsFillPersonFill />*/}
-        {/*  </Fab>*/}
-        {/*</div>*/}
+
+
+        <div>
+
+        </div>
 
       </div>
       </>

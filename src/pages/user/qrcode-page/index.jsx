@@ -52,7 +52,6 @@ function UserLoginPage() {
                         <div style={{
                             width: '350px',
                             textAlign: 'center',
-                            marginBottom: '30px',
                             flex: 1,
                             display: "flex",
                             flexDirection: "column",
