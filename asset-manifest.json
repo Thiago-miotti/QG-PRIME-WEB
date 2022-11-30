@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.794ae783.css",
-    "main.js": "/static/js/main.f3243f25.js",
+    "main.js": "/static/js/main.d0a7eb42.js",
     "static/media/logoPrimeVideoPreto.svg": "/static/media/logoPrimeVideoPreto.f45d8a0d6022bb4cbd38a61de2a0dbc1.svg",
     "index.html": "/index.html",
     "main.794ae783.css.map": "/static/css/main.794ae783.css.map",
-    "main.f3243f25.js.map": "/static/js/main.f3243f25.js.map"
+    "main.d0a7eb42.js.map": "/static/js/main.d0a7eb42.js.map"
   },
   "entrypoints": [
     "static/css/main.794ae783.css",
-    "static/js/main.f3243f25.js"
+    "static/js/main.d0a7eb42.js"
   ]
 }
